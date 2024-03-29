@@ -1,0 +1,87 @@
+:root {
+    --dark: #1d1d1d;
+    --grey-dark: #414141;
+    --light: #fff;
+    --mid: #ededed;
+    --grey: #989898;
+    --gray: #989898;
+    --green: #28a92b;
+    --green-dark: #4e9815;
+    --green-light: #6fb936;
+    --blue: #2c7ad2;
+    --purple: #8d3dae;
+    --red: #c82736;
+    --orange: #e77614;
+    accent-color: var(--green);
+}
+
+body {
+background-color: var(--dark);
+padding-top: 80px;
+background-image: 
+linear-gradient(rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+linear-gradient(90deg, rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+background-size: 100px 100px;
+height: 100vh;
+}
+
+        .container {
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(300deg,var(--grey-dark),var(--dark),var(--grey));
+             background-size: 300% 300%;
+             animation: gradient-animation 30s ease infinite;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label,
+        a#forgotPasswordLink {
+            color: white;
+           
+        }
+
+        .form-control {
+            background-color: transparent;  
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            transition: border-bottom 0.3s;
+        }
+        @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+        .form-control:hover {
+            border-bottom: 1px solid #fff;
+        }
+
+        .error-feedback {
+            color: red;
+            display: none;
+        }
+
+        .btn-green {
+    background-color: var(--green);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-green:hover {
+    background-color: var(--green-dark);
+}
+
+
+        .error {
+            border-bottom: 1px solid red !important;
+        }

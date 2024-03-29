@@ -1,0 +1,163 @@
+:root {
+    --dark: #1d1d1d;
+    --grey-dark: #414141;
+    --light: #fff;
+    --mid: #ededed;
+    --grey: #989898;
+    --gray: #989898;
+    --green: #28a92b;
+    --green-dark: #4e9815;
+    --green-light: #6fb936;
+    --blue: #2c7ad2;
+    --purple: #8d3dae;
+    --red: #c82736;
+    --orange: #e77614;
+    accent-color: var(--green);
+}
+
+body {
+    background-color: #111;
+    font-family: "Signika Negative", sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+#smooth-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#smooth-content {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(255, 255, 255, .07) 2px, transparent 2px),
+        linear-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .06) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.navbar {
+    background-color: transparent !important; 
+    transition: background-color 0.3s ease;
+  
+  }
+  .navbar-scrolled {
+    background-color:#6fb936 !important; 
+  }
+@media (max-width: 968px) {
+
+.navbar {
+background-color: #6fb936!important;
+}
+}
+
+@media (max-width: 576px) {
+
+.navbar {
+background-color:#6fb936 !important;
+}
+}
+
+.checks {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.checks h1 {
+    font-size: 70px;
+    cursor: pointer;
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+form {
+max-width: 400px; 
+margin: auto;
+padding: 20px;
+
+border-radius: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+form input {
+background-color: transparent;
+width: 50%; 
+padding: 10px;
+border: 2px solid #ccc;
+border-radius: 5px;
+color: white;
+}
+
+input[type="date"] {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+input[type="date"]::placeholder {
+    color: white;
+}
+
+input[type="date"]:focus {
+    background-color: transparent;
+    border: 2px solid #4e9815;
+    outline: none;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+button.btn {
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6fb936;
+    border: none;
+    color: white;
+}
+
+button.btn:hover {
+    background-color: #4e9815;
+    color: white;
+}
+
+button.btn:active {
+    background-color: #4e9815;
+    outline: none;
+    border-color: #ced4da;
+}
+
+
+.error {
+    border: 2px solid red !important;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}

@@ -1,0 +1,370 @@
+:root {
+    --dark: #1d1d1d;
+    --grey-dark: #414141;
+    --light: #fff;
+    --grey: #989898;
+    --gray: #989898;
+    --green: #28a92b;
+    --green-dark: #4e9815;
+    --green-light: #6fb936; 
+    --blue: #2c7ad2;
+    --purple: #8d3dae;
+    --red: #c82736;
+    --orange: #e77614;
+    accent-color: var(--green);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--light);
+    background-color: var(--dark);
+    padding-top: 80px;
+    background-image:
+        linear-gradient(rgba(255,255,255,.07) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(255,255,255,.07) 2px, transparent 2px),
+        linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    height: 100vh;
+    position: relative;
+    padding-bottom: 70px; /* Adjusted padding to accommodate the fixed footer */
+}
+
+.navbar {
+    background-color: #4e9815;
+}
+
+.navbar-brand {
+    color: var(--light);
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #4e9815;
+}
+
+.navbar-nav .nav-link {
+    color: var(--light);
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4e9815;
+} 
+
+.container {
+    max-width: 1200px;
+}
+
+.admin-orders table {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: rgb(94, 85, 85);  
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 40px; 
+    overflow: hidden; 
+} 
+
+.admin-orders th, .admin-orders td {
+    padding: 12px;
+    border-bottom: 5px solid #ddd;
+    text-align: center; 
+}
+
+.admin-orders td {
+    background-color:rgba(222, 223, 216, 0.991);
+    padding: 12px;
+    border-bottom:3px solid #b0b4a1;
+    text-align: center; 
+    font-size: large;
+    font-weight: bold;
+}
+
+td img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+} 
+
+td {
+    text-align: center;
+} 
+
+td img:hover {
+    transform: scale(1.1);
+}
+
+.admin-orders th {
+    background-color: #4e9815;
+}
+
+input[type="submit"] {
+    background-color: #4e9815;
+    color: var(--light);
+    border: none;
+    border-radius:10px;
+    width: 8rem;
+} 
+
+input[type="submit"]:hover {
+    background-color: #787570;
+    color: var(--light);
+} 
+
+.total-price {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+} 
+
+.total-price h3 {
+    font-size: 24px;
+    color: #faf9f6;
+} 
+
+.total-price span {
+    font-weight: bold;
+    color: #989c1c;
+} 
+
+.footer { 
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000; 
+} 
+
+.navbar {
+    background-color: transparent !important; /* Set initial background color to transparent */
+    transition: background-color 0.3s ease;/* Transparent background color */
+  
+  }
+  .navbar-scrolled {
+    background-color: #4e9815!important; /* Change background color when scrolled */
+  }
+  .checks{
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .checks h1{
+    font-size: 70px;
+    cursor: pointer;
+  }
+  .navbar-dark .navbar-brand {
+    color: #ffffff; /* Text color for navbar brand */
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Text color for navbar links */
+  }
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+.modal-body {
+    color: #111111;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    /* text-align: center; */
+    padding: 20px;
+}
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #807c7c;
+}
+.modal-close-btn:hover {
+    color: #555;
+}
+.modal-dialog {
+    margin: 100px auto;
+    max-width: 800px;
+}
+.product-images {
+    text-align: center;
+}
+.product-image {
+    display: inline-block;
+    margin: 15px;
+}
+.product-thumbnail {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+} 
+.product-thumbnail:hover {
+    transform: scale(1.2);
+} 
+a.btn-cancel {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+a.btn-view {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+a.btn-cancel:hover,
+a.btn-view:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c757d;
+}
+
+h1 {
+    font-size:3em; 
+    font-weight: 300;
+    line-height:1em;
+}
+
+h2 {
+    font-size:1em; 
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height:1em;
+    padding-bottom: 2em;
+    color: #FB667A;
+}
+
+h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.container th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+}
+
+.container td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container td, .container th {
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left:1%;  
+}
+
+.container th {
+    background-color: #4e9815;
+    text-align: center;
+}
+
+.container td:hover {
+    background-color:  #f5f6f4;
+    color: #0f0f0f;
+    font-weight: bold;
+    box-shadow: #4e9815 -1px 1px,   #4e9815 -2px 2px,  #4e9815 -3px 3px,   #4e9815 -4px 4px,   #4e9815 -5px 5px,   #4e9815 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+.table-buttons a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #4e9815; 
+    border-color: #090909;
+    transition: all 0.3s ease;
+}
+
+.table-buttons a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c757d;
+}
+.table-buttons a.btn-cancel:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: rgba(250, 247, 247, 0.8);
+    padding: 13px;
+    border-radius: 7px;
+}
+
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color:#4e9815;
+    color: #fff;
+    padding: 20px 0;
+}
+.product-image p {
+    visibility: hidden;
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+}
+.product-image:hover p {
+    visibility: visible;
+}
+.modal-header {
+    background-color: #4e9815; /* Change the background color of the modal header */
+    color: #fff; /* Change the text color of the modal header */
+    border-bottom: none; /* Remove the bottom border of the modal header */
+}
+@media (max-width: 968px) {
+    /* Adjust styles for small devices (tablets) */
+    /* Example: */
+    .navbar {
+       background-color: #4e9815!important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Adjust styles for extra small devices (phones) */
+    /* Example: */
+    .navbar {
+      background-color:#4e9815!important;
+    }
+  }
